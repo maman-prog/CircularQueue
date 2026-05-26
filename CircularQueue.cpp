@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class Quese
+class Queues
 {
     private:
         static const int max = 3;
@@ -9,10 +9,18 @@ class Quese
         int queue_array[max];
 
     public:
-        Quese()
+        Queues()
         {
             FRONT = -1;
             REAR = -1;
         }
-        
+
+        void insert()
+        {
+            int num;
+            cout << "Enter a number: ";
+            cin >> num;
+            cout << endl;
+        }
+
 }
