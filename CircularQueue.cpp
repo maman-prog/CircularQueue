@@ -22,7 +22,7 @@ class Queues
             cin >> num;
             cout << endl;
         
-            if ((FRONT == 0 && REAR == max - 1) || (FRONT == REAR +))
+            if ((FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1))
             {
                 cout << "\nQueue overflow\n";
                 return;
@@ -150,5 +150,16 @@ int main()
                 return 0;
             }
             default:
+             {
+                cout << "Invalid option!!!" << endl;
+                break;
+            }
+            }
+        }
+        catch (exception &e)
+        {
+            cout << "check for the values entered." << endl;
+        }
     }
+    return 0;
 }
